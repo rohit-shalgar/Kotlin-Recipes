@@ -1,0 +1,13 @@
+copy,equals,hashcode,toString are all part of data class
+it is not a good idea to compare floating values directly.
+It is recommended to use hamcrest matchers such as closeTo()
+
+
+LATEINIT VERSUS LAZY
+The lateinit modifier is used on var properties with the restrictions discussed in this recipe.
+The lazy delegate takes a lambda that is evaluated the first time a property is accessed.
+
+Use lazy if initialization is expensive and might never be done.
+ Also, lazy can be used only for val properties, whereas lateinit can be applied only to var properties.
+ Finally, lateinit properties can be initialized from anywhere the property is visible,
+so, as in one of the preceding examples, from outside the object.
