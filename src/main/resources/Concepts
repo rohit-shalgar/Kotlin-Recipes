@@ -11,3 +11,10 @@ Use lazy if initialization is expensive and might never be done.
  Also, lazy can be used only for val properties, whereas lateinit can be applied only to var properties.
  Finally, lateinit properties can be initialized from anywhere the property is visible,
 so, as in one of the preceding examples, from outside the object.
+
+ A progression is simply an ordered sequence of values.
+  Custom progressions implement the Iterable interface,
+  just as the existing progressions IntProgression, LongProgression, and CharProgression in the standard library do.
+
+  https://github.com/kousen/kotlin-cookbook/blob/main/src/main/kotlin/collections/LocalDateProgression.kt
+
