@@ -18,5 +18,6 @@ class TestShortCircuitFunctions {
     @Test
     fun `find first number divisible by 3 with sequence`(){
         assertEquals(204, findFirstWithSequence())
+
     }
 }
